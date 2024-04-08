@@ -1,0 +1,157 @@
+<html>
+<head>
+    <title>Perfect Days</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #ffcccc, #7AA2E3);
+      background-size: cover;
+      background-position: center;
+        }
+        div.top {
+            position: fixed;
+            height: 10%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(248,246,227,0.5);
+            box-sizing: border-box;
+            padding: 20px;
+            opacity: 95%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            div.top a {
+                border-radius: 10px;
+            }
+        div.video {
+            position: fixed;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            margin-top:2%;
+            background-color: rgba(151, 231, 225, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        div.explain {
+  position: fixed;
+  top: 53%;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background-color: rgba(255,138,128,0.3);
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 95%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+div.info {
+  text-align: left;
+}
+
+div.info p {
+  margin: 0;
+  display: inline;
+}
+        iframe {
+            width: auto;
+            height: 100%;
+            aspect-ratio:16/9;
+            margin: 0 auto;
+        }
+        div.channel {
+            position: fixed;
+  top: 44%;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background-color: rgba(255,64,129,0.3);
+  box-sizing: border-box;
+  padding: 20px;
+  opacity: 95%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+        }
+        div.channel img {
+  width: 50px;
+  height: auto;
+  margin-left: 20px;
+}
+div.comment {
+    position: fixed;
+            top: 65%;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            margin-top:2%;
+            background-color: rgba(151, 231, 225, 0.2);
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+            line-height: 50px;
+}
+div.comment img {
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+div.comment input [type="text"] {
+    height: 50px;
+    width: 800px;
+    padding: 10px
+}
+        </style>
+        </head>
+        <body>
+            <div class="top">
+                <a href="Homepage.html" style="float: left; font-family: impact; font-size: xx-large; color: #86B6F6; ">Moolendar</a>
+                <p style="text-align: center; font-family: Impact; font-size: xx-large; color: #265073"><strong>Perfect Days</strong></p>
+                <a href="Sign_Up.html" style="float: right; background-color: rgba(106,212,221,0.6); color: white; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block;">Sign Up</a>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/HTgWYojq-z8?si=rEb0NtxNw-3DsKrD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="channel">
+                <a href="https://tv.apple.com/us/movie/perfect-days/umc.cmc.4144icbf4p6lsxokikch0zfzq"><img src="https://www.apple.com/v/apple-tv-plus/ah/images/meta/apple-tv__e7aqjl2rqzau_og.png?202402071627" alt="apple tv"></a></div>
+            <div class="explain">
+                <div class="info">
+                  <p style="font-size: x-large;">Director:  </p>
+                  <p style="font-size: large;">Wim Wenders</p>
+                  <br>
+                  <p style="font-size: x-large;">Writers:  </p>
+                  <p style="font-size: large;">Wim Wenders</p>
+                  <p style="font-size: large;">Takuma Takasaki</p>
+                  <br>
+                  <p style="font-size: x-large;">Stars:  </p>
+                  <p style="font-size: large;">Koji Yakusho</p>
+                  <p style="font-size: large;">Tokio Emoto</p>
+                </div>
+              </div>
+              <div class="comment">
+                <img src="https://thoughtcatalog.com/wp-content/uploads/2014/07/screen-shot-2014-07-10-at-12-13-23-pm.png?w=1035&h=680&crop=1" alt="UserImgae"><br>
+                <form method="post" action="comment.asp">
+                  <input type="text" placeholder="Type what your thought about the movie" name="commentin">
+                <input type="submit" value="submit" id="commentsub"></form>
+              </div>
+        </body>
+</html>

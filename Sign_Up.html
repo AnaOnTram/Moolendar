@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Sign Up</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #ffcccc, #7AA2E3);
+            background-size: cover;
+            background-position: center;
+        }
+        div.top {
+            position: fixed;
+            height: 10%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(248,246,227,0.5);
+            box-sizing: border-box;
+            padding: 20px;
+            opacity: 95%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div.SignUp {
+            position: fixed;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin-top: 2%;
+            background-color: rgba(151, 231, 225, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        div.SignUp p {
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size:x-large;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <a href="Homepage.html" style="float: left; font-family: impact; font-size: xx-large; color: #86B6F6; ">Moolendar</a>
+        <p style="text-align: center; font-family: Impact; font-size: xx-large; color: #265073"><strong>Sign Up</strong></p>
+        </div>
+    <div class="SignUp">
+        <form method="post" action="Sign_Up.asp">
+            <p>User ID</p>
+            <input type="text" placeholder="4 digits" name="UserID" /><br />
+            <p>User Name</p>
+            <input type="text" placeholder="Input Your User Name" name="UserName" /><br />
+            <p>Mail Address</p>
+            <input type="text" placeholder="Input your Email Address" name="Mail" /><br />
+            <p>Gender</p>
+            <input type="radio" name="Gender" value="Male" /> Male<br />
+            <input type="radio" name="Gender" value="Female" />Female <br />
+            <input type="radio" name="Gender" value="Other" />Other <br />
+            <br />
+            <p style="font-size:small">By checking the statement, you agree to our user privacy policy</p>
+            <input type="radio" value="Check" />I Agree to all Privacy Policies.
+            <br /><br>
+            <input type="submit" value="submit" />
+        </form>
+    </div>
+    
+</body>
+</html>

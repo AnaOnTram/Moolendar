@@ -1,0 +1,227 @@
+<html>
+<head>
+    <title>Exploring</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #ffcccc, #7AA2E3);
+            background-size: cover;
+            background-position: center;
+        }
+
+        div.top {
+            position: fixed;
+            height: 10%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(248,246,227,0.5);
+            box-sizing: border-box;
+            padding: 20px;
+            opacity: 95%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        div.top a {
+            border-radius:10px;
+        }
+        div.mood {
+            position: fixed;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: 85%;
+            margin-top: 2%;
+            background-color: rgba(151, 231, 225, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+            justify-content:space-around;
+            gap: 20px;
+        }
+        div.epic {
+            top: 15%;
+            left: 0;
+            width: 30%;
+            height: 75%;
+            margin-top: 2%;
+            background-color: rgba(255,138,128,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+            flex-direction: column;
+        }
+        div.epic img {
+            height: 270px;
+            width: 450px;
+            border-radius:20px;
+        }
+            div.epic button {
+                width: 165px;
+                aspect-ratio: 21/9;
+                cursor: pointer;
+                color: #ffff;
+                font-family: 'Bahnschrift';
+                font-size: 25px;
+                border-radius: 1.5rem;
+                border: none;
+                position: relative;
+                background: #020A11;
+                transition: 0.1s
+            }
+            div.epic button::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(180,0,74,1) 0%, rgba(200,9,121,1) 36%, rgba(0,212,255,1) 100%);
+                filter: blur(15px);
+                z-index: -1;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            div.epic h2 {
+                font-family: Bahnschrift;
+            }
+        div.blue {
+            top: 15%;
+            left: 0;
+            width: 30%;
+            height: 75%;
+            margin-top: 2%;
+            background-color: rgba(67, 10, 93,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+            flex-direction: column;
+        }
+            div.blue img {
+                height: 270px;
+                width: 450px;
+                border-radius: 20px;
+            }
+            div.blue button {
+                width: 165px;
+                aspect-ratio: 21/9;
+                cursor: pointer;
+                color: #ffff;
+                font-family: 'Bahnschrift';
+                font-size: 25px;
+                border-radius: 1.5rem;
+                border: none;
+                position: relative;
+                background: #020A11;
+                transition: 0.1s
+            }
+
+            div.blue button::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(180,0,74,1) 0%, rgba(200,9,121,1) 36%, rgba(0,212,255,1) 100%);
+                filter: blur(15px);
+                z-index: -1;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            div.blue h2 {
+                color:blueviolet;
+                font-family:Bahnschrift;
+            }
+        div.loving {
+            top: 15%;
+            left: 0;
+            width: 30%;
+            height: 75%;
+            margin-top: 2%;
+            background-color: rgba(214, 88, 159,0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+            flex-direction: column;
+        }
+            div.loving img {
+                height: 270px;
+                width: 450px;
+                border-radius: 20px;
+            }
+        div.loving button {
+            width: 165px;
+            aspect-ratio: 21/9;
+            cursor: pointer;
+            color: #ffff;
+            font-family: 'Poppins';
+            font-size: 25px;
+            border-radius: 1.5rem;
+            border: none;
+            position: relative;
+            background: #020A11;
+            transition: 0.1s
+        }
+
+            div.loving button::after {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(180,0,74,1) 0%, rgba(200,9,121,1) 36%, rgba(0,212,255,1) 100%);
+                filter: blur(15px);
+                z-index: -1;
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+            div.loving h2 {
+                font-family: Bahnschrift;
+                color:deeppink;
+            }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <a href="Homepage.html" style="float: left; font-family: impact; font-size: xx-large; color: #86B6F6; ">Moolendar</a>
+        <p style="text-align: center; font-family: Impact; font-size: xx-large; color: #265073"><strong>Mood Explore</strong></p>
+        <a href="Sign_Up.html" style="float: right; background-color: rgba(106,212,221,0.6); color: white; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block;">Sign Up</a>
+    </div>
+    <div class="mood">
+            <div class="epic">
+                <h2 style="color: #F2613F ">EPIC</h2>
+                <img src="https://media.newyorker.com/photos/63a4ab3ad4603b6528c3fdaa/3:2/w_2559,h_1706,c_limit/Brody-Babylon-Review.jpg" alt="Babylon" /><br />
+                <button href="Epic.html">Hit Me</button>
+                <br /><audio controls src="epic.mp3" type="audio/mp3"></audio>
+            </div>
+            <div class="blue">
+                <h2>Blue</h2>
+                <img src="https://www.marketplace.org/wp-content/uploads/2019/09/HER.jpg?fit=1776%2C999" alt="Her" /><br />
+                <button href="Blue.html">Heal Me</button>
+                <br /><audio controls src="blue.mp3" type="audio/mp3"></audio>
+            </div>
+            <div class="loving">
+                <h2>Loving</h2>
+                <img src="https://ew.com/thmb/6wzCl808aJYMq8RX4qh5zjNVWhg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/000012010-1-2000-f03c4d1c57994b6594b191fe7af44488.jpg" alt="500 Days of summer" /> <br />
+                <button href="Loving.html">Want Love</button>
+                <br /><audio controls src="loving.mp3" type="audio/mp3"></audio>
+            </div>
+    </div>
+</body>
+</html>
