@@ -26,6 +26,12 @@
             div.top a {
                 border-radius: 10px;
             }
+            div.top p {
+                font-family: Impact;
+                font-size: xx-large;
+                color: #265073;
+                float: left;
+            }
 
         div.container {
             position: fixed;
@@ -113,8 +119,9 @@
 </head>
 <body>
     <div class="top">
-        <p style="font-family: impact; font-size: xx-large; float: left; color: #86B6F6;"><strong>Moolendar</strong></p>
-        <a href="Sign_Up.html" style="float:right">Sign Up</a>
+        <p style="color:#86B6F6;"><strong>Moolendar</strong></p>
+        <p id="time"></p>
+        <a href="Sign_Up.html">Sign Up</a>
     </div>
     <div class="container">
         <div class="left-div">
@@ -130,5 +137,13 @@
             <iframe width="560" height="315" src="https://www.youtube.com/embed/QzZBbX5A1FA?si=RVmm0wirvjyDVJEJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </div>
+    <script>
+        function updateDate() {
+            var currentDate = new Date();
+            document.getElementById('time').innerText = currentDate.toDateString();
+        }
+
+        updateDate()
+    </script>
 </body>
 </html>
