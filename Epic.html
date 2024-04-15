@@ -1,0 +1,161 @@
+<html>
+<head>
+    <title>Epic Recommendation</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, #FFBE98, #FEECE2);
+            background-size: cover;
+            background-position: center;
+        }
+        div.top {
+            position: fixed;
+            height: 10%;
+            left: 0;
+            width: 100%;
+            background-color: rgba(248,246,227,0.5);
+            box-sizing: border-box;
+            padding: 20px;
+            opacity: 95%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            div.top a {
+                border-radius: 10px;
+            }
+        div.video {
+            position: fixed;
+            top: 10%;
+            left: 0;
+            width: 100%;
+            height: 40%;
+            margin-top: 2%;
+            background-color: rgba(241, 239, 153,0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+        div.video iframe {
+            border-radius:15px;
+        }
+        div.channel {
+            position: fixed;
+            top: 55%;
+            left: 0;
+            height: auto;
+            width: 100%;
+            background-color: rgba(226, 94, 62,0.1);
+            box-sizing: border-box;
+            padding: 20px;
+            opacity: 95%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: left;
+        }
+            div.channel img {
+                width: 50px;
+                height: 50px;
+                object-fit: cover;
+                margin-left: 20px;
+                border-radius: 50px;
+            }
+        div.explain {
+            position: fixed;
+            top: 66%;
+            left: 0;
+            height: auto;
+            width: 100%;
+            background-color: rgba(255, 155, 80,0.15);
+            box-sizing: border-box;
+            padding: 20px;
+            opacity: 95%;
+            border-radius: 20px;
+            display: flex;
+            justify-content: left;
+        }
+
+        div.info {
+            text-align: left;
+        }
+
+            div.info p {
+                margin: 0;
+                display: inline;
+                font-family: Impact;
+            }
+        div.comment {
+            position: fixed;
+            top: 78%;
+            left: 0;
+            width: 100%;
+            height: 30%;
+            margin-top: 2%;
+            background-color: rgba(255, 187, 92, 0.1);
+            display: flex;
+            justify-content: left;
+            padding: 10px;
+            box-sizing: border-box;
+            opacity: 95%;
+            border-radius: 15px;
+            overflow: hidden;
+            line-height: 50px;
+        }
+        div.comment img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        input[type=text] {
+            color: #979797;
+            height: 28px;
+            padding-left: 10px;
+            text-decoration: none;
+            background-image: url('Pictures/Input-BG.png');
+            background-repeat: repeat-x;
+            padding:10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <a href="Homepage.html" style="float: left; font-family: impact; font-size: xx-large; color: #FF9B50; ">Moolendar</a>
+        <p style="text-align: center; font-family: Impact; font-size: xx-large; color: #C63D2F "><strong>Babylon</strong></p>
+        <a href="Sign_Up.html" style="float: right; background-color: rgba(255, 155, 80,0.6); color: white; padding: 14px 25px; text-align: center; text-decoration: none; display: inline-block; ">Sign Up</a>
+    </div>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/5muQK7CuFtY?si=l9CMHPQKL9vW7ZGO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="channel">
+        <a href="https://www.youtube.com/watch?v=OrwLDV_QV2Y"><img src="https://static1.xdaimages.com/wordpress/wp-content/uploads/2017/01/Google-Play-Movies-TV-Feature-Image-XDA-Portal-Red.png" alt="google movie" /></a>
+        <a href="https://tv.apple.com/hk/movie/babylon/umc.cmc.7kk8f30mb8n6pilf1evoeys7g?action=play"><img src="https://www.apple.com/v/apple-tv-plus/ah/images/meta/apple-tv__e7aqjl2rqzau_og.png?202402071627" alt="appletv" /></a>
+    </div>
+    <div class="explain">
+        <div class="info">
+            <p style="font-size: x-large;">Director:  </p>
+            <p style="font-size: large;">Wim Wenders</p>
+            <br>
+            <p style="font-size: x-large;">Writers:  </p>
+            <p style="font-size: large;">Damien Chazelle</p>
+            <br>
+            <p style="font-size: x-large;">Stars:  </p>
+            <p style="font-size: large;">Brad Pitt, </p>
+            <p style="font-size: large;">Margot Robbie</p>
+        </div>
+    </div>
+    <div class="comment">
+        <img src="https://www.indiewire.com/wp-content/uploads/2022/11/Babylon-1.png" alt="UserImgae"><br>
+        <form method="post" action="comment.asp">
+            <input type="text" placeholder="Type what your thought about the movie" name="commentin">
+            <input type="submit" value="submit" id="commentsub">
+        </form>
+    </div>
+</body>
+</html>
